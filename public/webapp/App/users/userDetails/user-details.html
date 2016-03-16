@@ -1,0 +1,18 @@
+<div class="usersDetailContainer">
+
+	<!-- USER DETAILS HEADER -->
+	<!-- NAVIGATION -->
+	<nav class="navbar inner_navbar" ng-if="stateParams_userId">
+		<div class="navbar-header button-at-right">
+			<span class="navbar-brand" >{{getTabDesc()}}</a>
+		</div>
+		<ul class="nav nav-tabs">
+			<li ui-sref-active="active"><a ui-sref="users.details.personal">Personal Data</a></li>
+			<li ui-sref-active="active"><a ui-sref="users.details.holidays">Holidays</a></li>
+		</ul>
+	</nav>
+
+	<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT -->
+	<div class="inner-content"  ui-view></div>
+
+</div>
